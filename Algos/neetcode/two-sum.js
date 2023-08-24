@@ -8,3 +8,7 @@ You can return the answer in any order.
  * @param {number} target
  * @return {number[]}
  */
+
+var twoSum = function(nums, target) {
+    
+};
