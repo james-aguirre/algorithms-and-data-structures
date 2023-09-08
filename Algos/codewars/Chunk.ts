@@ -13,8 +13,16 @@ chunk([], 7);
 // -> []
  */
 
-function chunk(array, size) {
-  const arr = [];
+// function chunk(array, size) {
+//   const arr = [];
+//   for (let i = 0; i < array.length; i += size) {
+//     arr.push(array.slice(i, i + size));
+//   }
+//   return arr;
+// }
+
+function chunk<T>(array: T[], size: number): T[][] {
+  const arr: T[][] = [];
   for (let i = 0; i < array.length; i += size) {
     arr.push(array.slice(i, i + size));
   }

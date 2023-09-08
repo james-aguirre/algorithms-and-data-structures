@@ -7,23 +7,6 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
  */
 
 function sumTwoSmallestNumbers(numbers) {
-  const arr = [15, 37, 9, 21, 55];
-  let min = Infinity,
-    secondMin = Infinity;
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] < min) {
-      secondMin = min;
-      min = numbers[i];
-    } else if (numbers[i] < secondMin) {
-      secondMin = numbers[i];
-    }
-  }
-  return min + secondMin;
+  var [a, b] = numbers.sort((a, b) => a - b);
+  return a + b;
 }
-/** 
- * other shorter solution: 
- * function sumTwoSmallestNumbers(numbers) {  
-  var [ a, b ] = numbers.sort((a, b) => a - b)
-  return a + b
-}
- */
