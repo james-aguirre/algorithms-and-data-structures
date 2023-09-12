@@ -51,7 +51,6 @@ function romanToInt(s: string): number {
   for (let i = 0; i < s.length; i++) {
     const index = s[i];
     const nextIndex = s[i + 1];
-
     // check to see if the next index val is greater than our current index ie: IV = 5 - 1 = 4
     // if it is we add next index(5) - current(1), then skip over that value next iteration(i++)
     if (map[index] < map[nextIndex]) {
