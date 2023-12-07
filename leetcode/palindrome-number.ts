@@ -25,9 +25,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = function (x) {
-  const str = x.toString();
-  let isValid = '';
+var isPalindrome = function (x: number): boolean {
+  const str: string = x.toString();
+  let isValid: string = '';
   for (let i = str.length - 1; i >= 0; i--) {
     isValid += str[i];
   }
