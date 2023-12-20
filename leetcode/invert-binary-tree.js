@@ -20,8 +20,6 @@ var invertTree = function (root) {
   let temp = root.left;
   root.left = root.right;
   root.right = temp;
-  // I asume since fuctions are hoisted, we must be able to call invertTree before it is defined ??
-  // fascinating
   invertTree(root.left);
   invertTree(root.right);
   return root;
